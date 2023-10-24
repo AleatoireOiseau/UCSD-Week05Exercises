@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <p>Element selector</p>
+    <p id="id">ID selector</p>
+    <p class="first">Class selector</p>
+    <div class="second">
+        <p>Div with class "second" and p element inside</p>
+    </div>
+    <div id="#id" class="second">
+        <h1 class="third">Div with class "second" and H1 element with class "third"</h1>
+    </div>
+    <h1>H1 element without a class</h1>
+
+    <script>
+        $(document).ready(function(){
+            $('p').css('background-color', 'red');
+            $('#id').css('background-color', 'blue');
+            $('.first').css('background-color', 'green');
+            $('div.second').has('p').css('border', '1px solid blue');
+            $('h1').not('.third').css('background-color', 'pink');
+        });
+    </script>
+</body>
+</html>

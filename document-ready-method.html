@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Ready Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <p>Paragraph section</p>
+
+    <script>
+        $(document).ready(function(){
+            console.log("DOM is loaded");
+            $('p').css('background-color', 'blue');
+            $('p').css('color', 'red');
+        });
+    </script>
+</body>
+</html>

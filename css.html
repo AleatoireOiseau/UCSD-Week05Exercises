@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <p id="p1">Paragraph element 1</p>
+    <p id="p2">Paragraph element 2</p>
+
+    <script>
+        $(document).ready(function(){
+            $('p#p1').css('background-color', 'pink');  // $('{element}#{element-id}')
+            $('p#p2').css({                             // $('{element}#{element-id}')
+                'background-color': 'rgb(200, 200, 200)',
+                'font-size': '12px',
+                'color': 'black'
+            });
+        });
+    </script>
+</body>
+</html>
